@@ -33,6 +33,7 @@ ALLOWED_HOSTS = [
     "8000-j0hanz-techcorner-kdeouusolp7.ws-eu110.gitpod.io",
     "127.0.0.1",
     "localhost",
+    "site-tech-corner-c98dd401a236.herokuapp.com",
 ]
 
 
