@@ -22,6 +22,6 @@
   "typescript.suggest.paths": false,
   "javascript.suggest.paths": false,
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Default Dark Modern",
   "terminal.integrated.gpuAcceleration": "canvas"
 }
