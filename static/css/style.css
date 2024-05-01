@@ -1,8 +1,8 @@
+/* Font family imported by Google Fonts */
 /* Body */
 body {
-  min-height: 100vh;
   color: #ffffff;
-  font-family: Abel;
+  font-family: "Open Sans", sans-serif;
   background: linear-gradient(0deg, #171515, #0c3736, #171515);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -11,24 +11,40 @@ body {
 /* Links */
 a {
   text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff;
 }
 
 .img-top {
-  width: 150px;
+  width: 45px;
 }
 
-.img-main {
-  width: 420px;
+.navbar-toggler:focus {
+  box-shadow: none;
+  border-color: #9b9a9a;
 }
 
-.fa-brands {
-  font-size: 30px;
-  color: #ffffff;
-  padding-left: 35px;
-  padding-bottom: 10px;
-}
 
-.fa-brands:hover {
+.navbar-toggler:focus {
   color: #9b9a9a;
-  transition: 0.5s;
+}
+
+.nav-link:hover {
+  color: #9b9a9a;
+}
+
+nav {
+  box-shadow: 0px 2px 0px #9b9a9a;
+}
+
+@media (max-width: 575px) {
+  .navbar-toggler {
+    margin-top: 12px;
+  }
+  nav {
+    box-shadow: 0px 0px 0px;
+  }
 }
