@@ -1,1 +1,1 @@
-web: gunicorn tech_corner.wsgi:application
+web: gunicorn tech_corner.wsgi
