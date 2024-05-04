@@ -17,9 +17,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from my_project import views
+from website import views
+from blog.views import my_blog
 
 urlpatterns = [
-    path('', include('my_project.urls')),
+    path('', include('website.urls')),
     path('admin/', admin.site.urls),
+    path('blog/', my_blog, name='blog'),
 ]
