@@ -68,9 +68,7 @@ ROOT_URLCONF = 'tech_corner.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [
-            os.path.join(BASE_DIR, 'templates'),
-            ],
+        'DIRS': [TEMPLATES_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -83,6 +81,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'tech_corner.wsgi.application'
 
 
@@ -94,7 +93,7 @@ DATABASES = {'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))}
 
 CSRF_TRUSTED_ORIGINS = [
     "https://*.gitpod.io",
-    "https://*.herokuapp.com/"
+    "https://*.herokuapp.com"
 ]
 
 # Password validation
