@@ -1,3 +1,4 @@
 env.py
 db.sqlite3
 __pycache__/
+blog/fixtures/

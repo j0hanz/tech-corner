@@ -1,50 +1,161 @@
-/* Font family imported by Google Fonts */
-/* Body */
 body {
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  background: linear-gradient(0deg, #171515, #0c3736, #171515);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #f9fafc;
 }
 
-/* Links */
-a {
+.brand {
+  font-family: Lato, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #4a4a4f;
+}
+
+.red-o {
+  color: #e84610;
+}
+
+.thin {
+  font-weight: 300;
+}
+
+.light-bg {
+  background-color: #fff;
+}
+
+.dark-bg {
+  background-color: #445261;
+}
+
+.main-bg {
+  background-color: #f9fafc;
+}
+
+.card {
+  border: none;
+  background-color: transparent;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-flash {
+  position: absolute;
+  bottom: 5%;
+  min-width: 30%;
+  left: -2px;
+  background-color: #188181;
+}
+
+.scale {
+  width: 100%;
+  height: auto;
+}
+
+.author {
+  color: white;
+  margin: 4px;
+  text-transform: uppercase;
+}
+
+.masthead {
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  height: 33vh;
+  width: 100%;
+}
+
+.masthead-text {
+  background-color: #445261;
+  color: white;
+  position: relative;
+}
+
+.masthead-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.masthead-image:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 90%;
+  height: 100%;
+  width: 150%;
+  background: #445261;
+  -webkit-transform: skew(15deg);
+  -moz-transform: skew(15deg);
+  transform: skew(15deg);
+  z-index: 100;
+}
+
+.post-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #445261;
 }
 
-.nav-link {
-  color: #ffffff;
+.post-link:hover,
+.page-link {
+  color: #e84610;
 }
 
-.img-top {
-  width: 45px;
+.post-title {
+  margin-top: 10%;
+  margin-left: 5%;
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
-  border-color: #9b9a9a;
+.post-subtitle {
+  margin-left: 5%;
+  color: lightgray;
 }
 
-
-.navbar-toggler:focus {
-  color: #9b9a9a;
+.btn-signup,
+.btn-edit {
+  background-color: #188181;
+  color: #fff;
 }
 
-.nav-link:hover {
-  color: #9b9a9a;
+.btn-signup:hover,
+.btn-signup:active {
+  background-color: #fff;
+  color: #23bbbb;
 }
 
-nav {
-  box-shadow: 0px 2px 0px #9b9a9a;
+.link {
+  color: #23bbbb;
+  text-decoration: none;
 }
 
-@media (max-width: 575px) {
-  .navbar-toggler {
-    margin-top: 12px;
-  }
-  nav {
-    box-shadow: 0px 0px 0px;
-  }
+.link:hover,
+.link:active {
+  color: #445261;
+  text-decoration: underline;
+}
+
+.btn-like {
+  color: #e84610;
+  border: none;
+  background: transparent;
+}
+
+.btn-delete {
+  color: #fff;
+  background: #e84610;
+}
+
+.btn-like:hover,
+.btn-like:active {
+  color: #e84610;
+  background: transparent;
+  border: none;
+}
+
+.faded {
+  color: rgb(172, 175, 175);
+}
+
+.approval {
+  color: rgb(222, 146, 168);
 }
