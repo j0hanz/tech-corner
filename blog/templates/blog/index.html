@@ -1,4 +1,4 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {% load static %} {% block content %}
 
 <!-- index.html content starts here -->
 <div class="container-fluid">
@@ -11,10 +11,23 @@
           <div class="card mb-4">
             <div class="card-body">
               <div class="image-container">
+                {% if "placeholder" in post.featured_image.url %}
+                <img
+                  class="card-img-top"
+                  src="{% static 'images/default.jpg' %}"
+                  alt="placeholder image"
+                />
+                {% else %}
+                <img
+                  class="card-img-top"
+                  src=" {{ post.featured_image.url }}"
+                  alt="{{ post.title }}"
+                />
+                {% endif %}
                 <div class="image-flash">
                   <p class="author">
                     <i class="fas fa-user" aria-label="Author"></i> {{ post.author }}
-                  </p>                  
+                  </p>
                 </div>
               </div>
               <a href="{% url 'post_detail' post.slug %}" class="post-link">
@@ -53,7 +66,5 @@
 </div>
 
 <!-- index.html content ends here -->
-{% endblock content %}
-{% block copyright %}
-Copyright 2023 Matt Rudge 
+{% endblock content %} {% block copyright %} Copyright 2023 Matt Rudge 
 {% endblock copyright %}
